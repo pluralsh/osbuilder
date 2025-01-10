@@ -1,6 +1,0 @@
-apiVersion: build.kairos.io/v1alpha1
-kind: OSArtifact
-metadata:
-  name: osartifact-sample
-spec:
-  # TODO(user): Add fields here

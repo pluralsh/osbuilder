@@ -1,7 +1,0 @@
-bases:
-- ../default
-
-images:
-- name: quay.io/kairos/osbuilder
-  newName: quay.io/kairos/osbuilder
-  newTag: test
