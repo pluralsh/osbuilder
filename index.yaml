@@ -1,5 +1,15 @@
 apiVersion: v1
 entries:
+  osartifact:
+  - apiVersion: v2
+    created: "2025-01-17T15:51:17.188448602Z"
+    description: A Helm chart for OSArtifact CRD deployment
+    digest: 343772ecf1afe07464837a75bf60b8d9752f109562598706ee46f3018dd5d26f
+    name: osartifact
+    type: application
+    urls:
+    - https://github.com/pluralsh/osbuilder/releases/download/osartifact-chart-v0.1.0/osartifact-0.1.0.tgz
+    version: 0.1.0
   osbuilder:
   - apiVersion: v2
     appVersion: 0.1.2
@@ -29,4 +39,4 @@ entries:
     urls:
     - https://github.com/pluralsh/osbuilder/releases/download/osbuilder-chart-v0.1.1/osbuilder-0.1.1.tgz
     version: 0.1.1
-generated: "2025-01-16T10:24:53.245222791Z"
+generated: "2025-01-17T15:51:17.188457208Z"
