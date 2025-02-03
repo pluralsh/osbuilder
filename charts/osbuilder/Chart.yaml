@@ -5,7 +5,7 @@ appVersion: 0.4.0
 version: 0.1.15
 dependencies:
   - name: cert-manager
-    version: v1.16.3
+    version: v1.17.0
     alias: certManager
     repository: https://charts.jetstack.io
     condition: certManager.enabled
