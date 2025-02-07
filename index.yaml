@@ -211,6 +211,26 @@ entries:
   osbuilder:
   - apiVersion: v2
     appVersion: 0.6.0
+    created: "2025-02-07T13:02:28.923729879Z"
+    dependencies:
+    - alias: certManager
+      condition: certManager.enabled
+      name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.16.3
+    description: A Helm chart for osbuilder
+    digest: 7c0d421aed521810e4403583899880cd26b11167f82e7a2ccbd0ac8ed7a1fae8
+    home: https://github.com/pluralsh/osbuilder
+    maintainers:
+    - email: support@plural.sh
+      name: Plural
+    name: osbuilder
+    type: application
+    urls:
+    - https://github.com/pluralsh/osbuilder/releases/download/osbuilder-chart-v0.2.0/osbuilder-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.6.0
     created: "2025-02-07T12:42:48.900125139Z"
     dependencies:
     - alias: certManager
@@ -507,4 +527,4 @@ entries:
     urls:
     - https://github.com/pluralsh/osbuilder/releases/download/osbuilder-chart-v0.1.1/osbuilder-0.1.1.tgz
     version: 0.1.1
-generated: "2025-02-07T12:42:48.900316197Z"
+generated: "2025-02-07T13:02:28.923886071Z"
