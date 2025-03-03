@@ -3,7 +3,7 @@ module github.com/kairos-io/osbuilder
 go 1.23.4
 
 require (
-	github.com/Yamashou/gqlgenc v0.23.2
+	github.com/Yamashou/gqlgenc v0.31.0
 	github.com/pkg/errors v0.9.1
 	github.com/pluralsh/console/go/client v1.28.3
 	k8s.io/api v0.32.1
@@ -11,10 +11,11 @@ require (
 	k8s.io/client-go v0.32.1
 	k8s.io/kubectl v0.32.1
 	sigs.k8s.io/controller-runtime v0.20.0
+	sigs.k8s.io/yaml v1.4.0
 )
 
 require (
-	github.com/99designs/gqlgen v0.17.49 // indirect
+	github.com/99designs/gqlgen v0.17.61 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -49,7 +50,7 @@ require (
 	github.com/prometheus/procfs v0.15.1 // indirect
 	github.com/sosodev/duration v1.3.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/vektah/gqlparser/v2 v2.5.16 // indirect
+	github.com/vektah/gqlparser/v2 v2.5.20 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
@@ -71,5 +72,4 @@ require (
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738 // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
-	sigs.k8s.io/yaml v1.4.0 // indirect
 )
