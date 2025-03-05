@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   osartifact:
   - apiVersion: v2
+    appVersion: 0.9.4
+    created: "2025-03-05T14:53:33.059512563Z"
+    description: A Helm chart for OSArtifact CRD deployment
+    digest: da0de71f47b813d70ad0f1c08d782f01ac154a596e1fd3e5ca6c0ab628c86b18
+    maintainers:
+    - email: support@plural.sh
+      name: Plural
+    name: osartifact
+    type: application
+    urls:
+    - https://github.com/pluralsh/osbuilder/releases/download/osartifact-chart-v0.9.1/osartifact-0.9.1.tgz
+    version: 0.9.1
+  - apiVersion: v2
     created: "2025-02-26T11:44:25.724501333Z"
     description: A Helm chart for OSArtifact CRD deployment
     digest: 1a416af723eb1369a21c213827a7fd85c64bc5842683bb5c8959904af55c3f07
@@ -221,6 +234,26 @@ entries:
     - https://github.com/pluralsh/osbuilder/releases/download/osartifact-chart-v0.1.0/osartifact-0.1.0.tgz
     version: 0.1.0
   osbuilder:
+  - apiVersion: v2
+    appVersion: 0.9.4
+    created: "2025-03-05T14:53:33.309714142Z"
+    dependencies:
+    - alias: certManager
+      condition: certManager.enabled
+      name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.16.3
+    description: A Helm chart for osbuilder
+    digest: 0bc374a7b3eb9d481b25aedb52620f74b12ef6657c2bb4444d938d287aa1e5d1
+    home: https://github.com/pluralsh/osbuilder
+    maintainers:
+    - email: support@plural.sh
+      name: Plural
+    name: osbuilder
+    type: application
+    urls:
+    - https://github.com/pluralsh/osbuilder/releases/download/osbuilder-chart-v0.2.7/osbuilder-0.2.7.tgz
+    version: 0.2.7
   - apiVersion: v2
     appVersion: 0.9.3
     created: "2025-03-05T14:11:54.143249865Z"
@@ -659,4 +692,4 @@ entries:
     urls:
     - https://github.com/pluralsh/osbuilder/releases/download/osbuilder-chart-v0.1.1/osbuilder-0.1.1.tgz
     version: 0.1.1
-generated: "2025-03-05T14:11:54.143434088Z"
+generated: "2025-03-05T14:53:33.3099174Z"
