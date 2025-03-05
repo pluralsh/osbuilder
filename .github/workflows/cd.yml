@@ -92,7 +92,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: "1.23.3"
-      - name: Push Chart
+      - name: Push Osbuilder Chart
         uses: pluralsh/chart-releaser@v0.1.3
         with:
           path: ./charts/osbuilder
@@ -109,6 +109,24 @@ jobs:
       - name: Helm Dependencies
         run: |
           cd charts/osbuilder
+          helm dependency update
+      - name: Push Osartifact Chart
+        uses: pluralsh/chart-releaser@v0.1.3
+        with:
+          path: ./charts/osartifact
+          release: ${{github.ref_name}}
+      - name: Read Chart Version
+        id: os_chart_version
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq ".version" charts/osartifact/Chart.yaml
+      - name: Update Chart Version
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq -i '.dependencies[] |= select(.name == "controller").version="${{ steps.os_chart_version.outputs.result }}"' charts/osbuilder/Chart.yaml
+      - name: Helm Dependencies
+        run: |
+          cd charts/osartifact
           helm dependency update
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
