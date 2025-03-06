@@ -42,8 +42,7 @@ bundles:
   plural-trust-manager-bundle: ghcr.io/pluralsh/kairos-plural-trust-manager-bundle:0.2.0
 
 # A list of extra bundles that should be added to the result ISO image.
-extraBundles:
-  - quay.io/kairos/community-bundles:system-upgrade-controller_latest
+extraBundles: []
 
 # Additional config for the default user
 defaultUser:
