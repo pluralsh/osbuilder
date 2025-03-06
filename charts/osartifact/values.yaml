@@ -41,9 +41,6 @@ bundles:
   plural-images-bundle: ghcr.io/pluralsh/kairos-plural-images-bundle:1.0.0
   plural-trust-manager-bundle: ghcr.io/pluralsh/kairos-plural-trust-manager-bundle:0.2.0
 
-# A list of extra bundles that should be added to the result ISO image.
-extraBundles: []
-
 # Additional config for the default user
 defaultUser:
   groups:
